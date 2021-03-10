@@ -80,7 +80,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-md-3 col-form-label text-right">Tên thường gọi/bí danh<span class="text-danger">*</span></label>
+                                                <label class="col-md-3 col-form-label text-right">Tên thường gọi/bí danh</label>
                                                 <div class="col-md-9">
                                                     <input type="text" class="form-control" name="title2_cd" value="{!!old('title2_cd')!!}" >
                                                     {!! $errors->first('title2_cd', '<span class="text-danger">:message</span>') !!}
@@ -94,28 +94,28 @@
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-md-3 col-form-label text-right">Nơi ở thường trú<span class="text-danger">*</span></label>
+                                                <label class="col-md-3 col-form-label text-right">Nơi ở thường trú</label>
                                                 <div class="col-md-9">
                                                     <input type="text" class="form-control" name="address_cd" value="{!!old('address_cd')!!}">
                                                     {!! $errors->first('address_cd', '<span class="text-danger">:message</span>') !!}
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-md-3 col-form-label text-right">Nơi ở hiện nay<span class="text-danger">*</span></label>
+                                                <label class="col-md-3 col-form-label text-right">Nơi ở hiện nay</label>
                                                 <div class="col-md-9">
                                                     <input type="text" class="form-control" name="address2_cd" value="{!!old('address2_cd')!!}">
                                                     {!! $errors->first('address2_cd', '<span class="text-danger">:message</span>') !!}
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-md-3 col-form-label text-right">Đơn vị công tác <span class="text-danger">*</span></label>
+                                                <label class="col-md-3 col-form-label text-right">Đơn vị công tác</label>
                                                 <div class="col-md-9">
                                                     <input type="text" class="form-control" name="employment_cd" value="{!!old('employment_cd')!!}">
                                                     {!! $errors->first('employment_cd', '<span class="text-danger">:message</span>') !!}
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-md-3 col-form-label text-right">Chức vụ<span class="text-danger">*</span></label>
+                                                <label class="col-md-3 col-form-label text-right">Chức vụ</label>
                                                 <div class="col-md-9">
                                                     <input type="text" class="form-control" name="position_cd" value="{!!old('position_cd')!!}">
                                                     {!! $errors->first('position_cd', '<span class="text-danger">:message</span>') !!}

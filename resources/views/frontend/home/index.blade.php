@@ -22,7 +22,7 @@
 					<span>Thứ hai, ngày 11 tháng 3 năm 2021</span><span>Hòm thư góp ý</span>
 				</div>
 			</div>
-			<div class="banner" style="background-image: url('images/cau-hvt.png');">
+			<div class="banner" style="background-image: url('img/cau-hvt.png');">
 				<h1>ỦY BAN BẦU CỬ THÀNH PHỐ HẢI PHÒNG</h1>
 			</div>
 			<div class="nav">
@@ -47,7 +47,7 @@
 					<div class="row">
 						<div class="section1-column1 col-6">
 							<div class="column1-firstnews">
-								<img src="images/nxp.jpg">
+								<img src="img/nxp.jpg">
 								<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
 								<span>12:37 03/03/2021</span>
 								<br>
@@ -57,11 +57,11 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-6">
-											<img src="images/nxp.jpg">
+											<img src="img/nxp.jpg">
 											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
 										</div>
 										<div class="col-6">
-											<img src="images/nxp.jpg">
+											<img src="img/nxp.jpg">
 											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
 										</div>
 									</div>
@@ -70,7 +70,7 @@
 						</div>
 						<div class="section1-column2 col-3">
 							<div class="column2-firstnews">
-								<img src="images/nxp.jpg">
+								<img src="img/nxp.jpg">
 								<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
 								<hr>
 							</div>
@@ -78,7 +78,7 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-5 wrapper-img">
-											<img src="images/nxp.jpg">
+											<img src="img/nxp.jpg">
 										</div>
 										<div class="col-7 wrapper-title" >
 											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
@@ -91,7 +91,7 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-5 wrapper-img">
-											<img src="images/nxp.jpg">
+											<img src="img/nxp.jpg">
 										</div>
 										<div class="col-7 wrapper-title" >
 											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
@@ -104,7 +104,7 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-5 wrapper-img">
-											<img src="images/nxp.jpg">
+											<img src="img/nxp.jpg">
 										</div>
 										<div class="col-7 wrapper-title" >
 											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
@@ -117,7 +117,7 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-5 wrapper-img">
-											<img src="images/nxp.jpg">
+											<img src="img/nxp.jpg">
 										</div>
 										<div class="col-7 wrapper-title" >
 											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
@@ -130,7 +130,7 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-5 wrapper-img">
-											<img src="images/nxp.jpg">
+											<img src="img/nxp.jpg">
 										</div>
 										<div class="col-7 wrapper-title" >
 											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
@@ -215,35 +215,35 @@
 						<div class="container wrapper-carousel">
 							<div class="owl-carousel owl-theme">
 							    <div class="item candidates">
-							    	<img src="images/nxp.jpg">
+							    	<img src="img/nxp.jpg">
 							    	<h3> Nguyễn Văn A</h3>
 							    </div>
 							    <div class="item candidates">
-							    	<img src="images/nxp.jpg">
+							    	<img src="img/nxp.jpg">
 							    	<h3> Nguyễn Văn A</h3>
 							    </div>
 							    <div class="item candidates">
-							    	<img src="images/nxp.jpg">
+							    	<img src="img/nxp.jpg">
 							    	<h3> Nguyễn Văn A</h3>
 							    </div>
 							    <div class="item candidates">
-							    	<img src="images/nxp.jpg">
+							    	<img src="img/nxp.jpg">
 							    	<h3> Nguyễn Văn A</h3>
 							    </div>
 							    <div class="item candidates">
-							    	<img src="images/nxp.jpg">
+							    	<img src="img/nxp.jpg">
 							    	<h3> Nguyễn Văn A</h3>
 							    </div>
 							    <div class="item candidates">
-							    	<img src="images/nxp.jpg">
+							    	<img src="img/nxp.jpg">
 							    	<h3> Nguyễn Văn A</h3>
 							    </div>
 							    <div class="item candidates">
-							    	<img src="images/nxp.jpg">
+							    	<img src="img/nxp.jpg">
 							    	<h3> Nguyễn Văn A</h3>
 							    </div>
 							    <div class="item candidates">
-							    	<img src="images/nxp.jpg">
+							    	<img src="img/nxp.jpg">
 							    	<h3> Nguyễn Văn A</h3>
 							    </div>
 							</div>
@@ -338,19 +338,19 @@
 							<div class="container wrapper-result">
 								<div class="row">
 									<div class="col-4">
-										<img src="images/nxp.jpg">
+										<img src="img/nxp.jpg">
 										<div class="title">
 										<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h3>
 										</div>
 									</div>
 									<div class="col-4">
-										<img src="images/nxp.jpg">
+										<img src="img/nxp.jpg">
 										<div class="title">
 										<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h3>
 										</div>
 									</div>
 									<div class="col-4">
-										<img src="images/nxp.jpg">
+										<img src="img/nxp.jpg">
 										<div class="title">
 										<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h3>
 										</div>
@@ -365,7 +365,7 @@
 								</div>
 							</div>
 							<div class="wrapper-gallery">
-								<img src="images/nxp.jpg">
+								<img src="img/nxp.jpg">
 							</div>
 						</div>
 					</div>

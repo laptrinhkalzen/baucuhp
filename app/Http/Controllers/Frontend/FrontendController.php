@@ -21,11 +21,7 @@ class FrontendController extends Controller {
         $gallery_arr = $this->categoryRepo->readHomeGalleryCategory($limit = 8);
         $construction_arr = $this->constructionRepo->readHomeConstruction($limit = 8);
         $keyword_arr = $this->keywordRepo->readHomeRecentKeyword($limit = 6);
-        if (config('global.device') != 'pc') {
-            return view('mobile/home/index', compact('category_arr', 'construction_arr', 'keyword_arr','gallery_arr'));
-        } else {
-            return view('frontend/home/index', compact('category_arr', 'construction_arr', 'keyword_arr'));
-        }
+        return view('frontend/home/index', compact('category_arr', 'construction_arr', 'keyword_arr'));
     }
 
 }

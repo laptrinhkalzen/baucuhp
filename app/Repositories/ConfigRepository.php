@@ -19,10 +19,7 @@ class ConfigRepository extends AbstractRepository {
             'image' => 'required',
             'favicon' => 'required',
             'title' => 'required',
-            'company_name' => 'required',
-            'address' => 'required',
             'email' => 'required',
-            'hotline' => 'required',
             'phone' => 'required',
         ];
     }

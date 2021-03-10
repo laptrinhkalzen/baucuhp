@@ -81,27 +81,6 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-md-3 col-form-label text-right">Tên công ty:</label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control" name="company_name" value="{!!old('company_name')?:$config->company_name!!}">
-                                    {!! $errors->first('company_name', '<span class="text-danger">:message</span>') !!}
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label text-right">Địa chỉ:</label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control" name="address" value="{!!$config->address!!}">
-                                    {!! $errors->first('address', '<span class="text-danger">:message</span>') !!}
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label text-right">Hotline:</label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control" name="hotline" value="{!!$config->hotline!!}">
-                                    {!! $errors->first('hotline', '<span class="text-danger">:message</span>') !!}
-                                </div>
-                            </div>
-                            <div class="form-group row">
                                 <label class="col-md-3 col-form-label text-right">Điện thoại:</label>
                                 <div class="col-md-9">
                                     <input type="text" class="form-control" name="phone" value="{!!$config->phone!!}">
@@ -113,34 +92,6 @@
                                 <div class="col-md-9">
                                     <input type="text" class="form-control" name="email" value="{!!$config->email!!}">
                                     {!! $errors->first('email', '<span class="text-danger">:message</span>') !!}
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label text-right">Facebook:</label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control" name="facebook" value="{!!$config->facebook!!}">
-                                    {!! $errors->first('facebook', '<span class="text-danger">:message</span>') !!}
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label text-right">Twitter:</label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control" name="twitter" value="{!!$config->twitter!!}">
-                                    {!! $errors->first('twitter', '<span class="text-danger">:message</span>') !!}
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label text-right">Kênh Youtube:</label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control" name="youtube_channel" value="{!!$config->youtube_channel!!}">
-                                    {!! $errors->first('youtube_channel', '<span class="text-danger">:message</span>') !!}
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label text-right">Thời gian làm việc:</label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control" name="working_hours" value="{!!$config->working_hours!!}">
-                                    {!! $errors->first('working_hours', '<span class="text-danger">:message</span>') !!}
                                 </div>
                             </div>
                             <div class="form-group row">

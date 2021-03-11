@@ -12,6 +12,7 @@
 		<script src="{!!asset('assets/frontend/js/jquery.min.js')!!}"></script>
 		<script src="{!!asset('assets/frontend/js/script.js')!!}"></script>
 		<script src="{!!asset('assets/frontend/js/owl.carousel.min.js')!!}"></script>
+		<script src="{!!asset('assets/frontend/js/bootstrap.min.js')!!}"></script>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 	</head>
@@ -46,156 +47,85 @@
 				<div class="container">
 					<div class="row">
 						<div class="section1-column1 col-6">
+							@foreach($news_arr as $key => $news)
+							@if($key==0)
 							<div class="column1-firstnews">
-								<img src="img/nxp.jpg">
-								<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
-								<span>12:37 03/03/2021</span>
+								<img src="{!!$news->getImage()!!}">
+								<h2>{!!$news->title!!}</h2>
+								<span>{!!$news->getPostSchedule()!!}</span>
 								<br>
-								<a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</a>
+								<a>{!!$news->description!!}</a>
 							</div>
+							@endif
+							@endforeach
 							<div class="column1-secondnews">
 								<div class="container">
 									<div class="row">
+										@foreach($news_arr as $key => $news)
+										@if($key>0 && $key<3)
 										<div class="col-6">
-											<img src="img/nxp.jpg">
-											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
+											<img src="{!!$news->getImage()!!}">
+											<h2>{!!$news->title!!}</h2>
 										</div>
-										<div class="col-6">
-											<img src="img/nxp.jpg">
-											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
-										</div>
+										@endif
+										@endforeach
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="section1-column2 col-3">
+							@foreach($news_arr as $key => $news)
+							@if($key==3)
 							<div class="column2-firstnews">
-								<img src="img/nxp.jpg">
-								<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
+								<img src="{!!$news->getImage()!!}">
+								<h2>{!!$news->title!!}</h2>
 								<hr>
 							</div>
+							@endif
+							@endforeach
+							@foreach($news_arr as $key => $news)
+							@if($key>3)
 							<div class="column2-secondnews">
 								<div class="container">
 									<div class="row">
 										<div class="col-5 wrapper-img">
-											<img src="img/nxp.jpg">
+											<img src="{!!$news->getImage()!!}">
 										</div>
 										<div class="col-7 wrapper-title" >
-											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
+											<h2>{!!$news->title!!}</h2>
 										</div>
 									</div>
 								</div>
 								<hr>
 							</div>
-							<div class="column2-secondnews">
-								<div class="container">
-									<div class="row">
-										<div class="col-5 wrapper-img">
-											<img src="img/nxp.jpg">
-										</div>
-										<div class="col-7 wrapper-title" >
-											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
-										</div>
-									</div>
-								</div>
-								<hr>
-							</div>
-							<div class="column2-secondnews">
-								<div class="container">
-									<div class="row">
-										<div class="col-5 wrapper-img">
-											<img src="img/nxp.jpg">
-										</div>
-										<div class="col-7 wrapper-title" >
-											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
-										</div>
-									</div>
-								</div>
-								<hr>
-							</div>
-							<div class="column2-secondnews">
-								<div class="container">
-									<div class="row">
-										<div class="col-5 wrapper-img">
-											<img src="img/nxp.jpg">
-										</div>
-										<div class="col-7 wrapper-title" >
-											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
-										</div>
-									</div>
-								</div>
-								<hr>
-							</div>
-							<div class="column2-secondnews">
-								<div class="container">
-									<div class="row">
-										<div class="col-5 wrapper-img">
-											<img src="img/nxp.jpg">
-										</div>
-										<div class="col-7 wrapper-title" >
-											<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.</h2>
-										</div>
-									</div>
-								</div>
-								<hr>
-							</div>
+							@endif
+							@endforeach
 						</div>
 						<div class="section1-column3 col-3">
 							<div class="news-tabs">
 								<ul>
-									<li>Tin mới</li>
-									<li>Tin đọc nhiều</li>
+									<li id="button_tinmoi" class="button-tinmoi" >Tin mới</li>
+									<li  id="button_tindocnhieu" class="button-tindocnhieu">Tin đọc nhiều</li>
 								</ul>
 							</div>
-							<div class="news" >
+							@foreach($news_isnew_arr as $key => $news)
+							<div class="news tin-moi" >
 								<img src="icon/clock.svg"><span>10 phút trước</span>
 								<h2>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.
+									{!!$news->title!!}
 								</h2>
 								<hr>
 							</div>
-							<div class="news" >
+							@endforeach
+							@foreach($news_ishot_arr as $key => $news)
+							<div class="news tin-doc-nhieu" >
 								<img src="icon/clock.svg"><span>10 phút trước</span>
 								<h2>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.
+									{!!$news->title!!}
 								</h2>
 								<hr>
 							</div>
-							<div class="news" >
-								<img src="icon/clock.svg"><span>10 phút trước</span>
-								<h2>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.
-								</h2>
-								<hr>
-							</div>
-							<div class="news" >
-								<img src="icon/clock.svg"><span>10 phút trước</span>
-								<h2>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.
-								</h2>
-								<hr>
-							</div>
-							<div class="news" >
-								<img src="icon/clock.svg"><span>10 phút trước</span>
-								<h2>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.
-								</h2>
-								<hr>
-							</div>
-							<div class="news" >
-								<img src="icon/clock.svg"><span>10 phút trước</span>
-								<h2>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.
-								</h2>
-								<hr>
-							</div>
-							<div class="news" >
-								<img src="icon/clock.svg"><span>10 phút trước</span>
-								<h2>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.
-								</h2>
-								<hr>
-							</div>
+							@endforeach
 						</div>
 					</div>
 				</div>
@@ -203,7 +133,7 @@
 			<div class="section2">
 				<div class="container">
 					<div class="row">
-						<span>Danh sách ứng cử viên</span>
+						<span class="section2-title">Danh sách ứng cử viên</span>
 						<ul>
 							<li>Quốc hội</li>
 							<li>HĐND Thành phố</li>
@@ -217,6 +147,7 @@
 							    <div class="item candidates">
 							    	<img src="img/nxp.jpg">
 							    	<h3> Nguyễn Văn A</h3>
+							    	<p class="section2-birthday">Sinh ngày mm/dd/yyy</p>
 							    </div>
 							    <div class="item candidates">
 							    	<img src="img/nxp.jpg">
@@ -262,28 +193,26 @@
 							</div>
 							<div class="container wrapper-video">
 								<div class="row">
+									@foreach($video_arr as $key => $video)
+									@if($key==0)
 									<div class="col-7 video-column1">
-										<iframe width="100%" height="345px" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+										<iframe width="100%" height="345px" src="{!!$video->getLinkYoutube()!!}">
 										</iframe>
-										<h3>Video1</h3>
+										<h3>{!!$video->title!!}</h3>
 									</div>
+									@endif
+									@endforeach
 									<div class="col-5 video-column2">
 										<div class="container">
+											@foreach($video_arr as $key => $video)
+											@if($key>0 && $key<4)
 											<div class="row video-box">
-												<iframe width="40%" height="106px" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+												<iframe width="40%" height="106px" src="{!!$video->getLinkYoutube()!!}">
 												</iframe>
-												<h3>Video1</h3>
+												<h3>{!!$video->title!!}</h3>
 											</div>
-											<div class="row video-box">
-												<iframe width="40%" height="106px" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-												</iframe>
-												<h3>Video1</h3>
-											</div>
-											<div class="row video-box">
-												<iframe width="40%" height="106px" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-												</iframe>
-												<h3>Video1</h3>
-											</div>
+											@endif
+											@endforeach
 										</div>
 
 									</div>
@@ -297,30 +226,14 @@
 								</div>
 							</div>
 							<div class="wrapper-documents">
+								@foreach($doc_arr as $key=>$doc)
 								<div class="documents">
 									<h3>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.
+										{!!$doc->title!!}
 									</h3>
 									<hr>
 								</div>
-								<div class="documents">
-									<h3>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.
-									</h3>
-									<hr>
-								</div>
-								<div class="documents">
-									<h3>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.
-									</h3>
-									<hr>
-								</div>
-								<div class="documents">
-									<h3>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id augue sit amet odio placerat maximus sed sed arcu. Aliquam erat volutpat. Nunc ultricies sem turpis, molestie feugiat risus maximus sed. Etiam id arcu dictum, finibus urna id, placerat sapien. Aliquam dictum finibus nisl, a porttitor felis luctus vitae.
-									</h3>
-									<hr>
-								</div>
+								@endforeach
 							</div>
 						</div>
 					</div>
@@ -398,6 +311,27 @@
         }
     }
 })
+</script>
+
+<script>
+$(document).ready(function(){
+  	$(".tin-doc-nhieu").hide();
+  	$("#button_tinmoi").click(function(){
+  		$('.button-tinmoi').css('border-bottom','solid 2px red');
+  		$('.button-tindocnhieu').css('border-bottom','none');
+	  	$(".tin-moi").show();
+	  	$(".tin-doc-nhieu").hide();
+
+  	});
+
+	$("#button_tindocnhieu").click(function(){
+  		$('.button-tindocnhieu').css('border-bottom','solid 2px red');
+  		$('.button-tinmoi').css('border-bottom','none');
+	  	$(".tin-doc-nhieu").show();
+	  	$(".tin-moi").hide();
+
+  	});
+});
 </script>
 
 @stop

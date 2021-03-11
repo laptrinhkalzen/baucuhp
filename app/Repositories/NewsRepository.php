@@ -61,5 +61,22 @@ class NewsRepository extends AbstractRepository {
         return $this->model->select('title', 'description','keywords', 'meta_title', 'meta_keywords', 'meta_description')->where('id', $id)->first();
     }
 
+    //Custom
+    public function getAllByCategory($category_id, $limit){
+        $news_id = \DB::table('news_category')->where('category_id', $category_id)->pluck('news_id');
+        $result = $this->model->whereIn('id',$news_id)->where('status',1)->orderBy('post_schedule','desc')->take($limit)->get();
+        return $result;
+    }
+    public function getAll($limit) {
+        return $this->model->where('status',1)->orderBy('post_schedule','desc')->take($limit)->get();
+    }
+    public function getIsNew($limit) {
+        return $this->model->where('status',1)->where('is_new',1)->take($limit)->get();
+    }
+    public function getIsHot($limit) {
+        return $this->model->where('status',1)->where('is_hot',1)->take($limit)->get();
+    }
+
+
 
 }

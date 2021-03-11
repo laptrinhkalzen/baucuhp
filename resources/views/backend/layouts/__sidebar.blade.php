@@ -96,6 +96,13 @@
                         <li class="nav-item"><a href="{{route('admin.news.index')}}" class="nav-link">Bài viết</a></li>
                     </ul>
                 </li>
+                <li class="nav-item nav-item-submenu">
+                    <a href="#" class="nav-link"><i class="icon-video-camera"></i> <span>Video</span></a>
+                    <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                        <li class="nav-item"><a href="{{route('admin.category.index', \App\Category::TYPE_VIDEO)}}" class="nav-link">Danh mục</a></li>
+                        <li class="nav-item"><a href="{{route('admin.video.index')}}" class="nav-link">Video</a></li>
+                    </ul>
+                </li>
 <!--                 <li class="nav-item nav-item-submenu">
                     <a href="#" class="nav-link"><i class="icon-camera"></i> <span>Hình ảnh</span></a>
                     <ul class="nav nav-group-sub" data-submenu-title="Layouts">

@@ -184,6 +184,19 @@ body .section1 .section1-column3 .news-tabs{
 	border-bottom: none;
 }
 
+body .section1 .section1-column3 .news-tabs .button-tinmoi{
+	cursor: pointer;
+	border-bottom: solid 2px red;
+}
+
+body .section1 .section1-column3 .news-tabs .button-tindocnhieu{
+	cursor: pointer;
+}
+
+body .section1 .section1-column3 .news-tabs ul{
+	margin-bottom: 0px;
+}
+
 body .section1 .section1-column3 .news-tabs li{
 	display: inline;
 	font-size: 16px;
@@ -233,6 +246,10 @@ body .section1 .section1-column3 .news hr{
 
 body .section2{
 	padding-top: 30px;
+}
+
+body .section2 .section2-birthday{
+	text-align: center;
 }
 
 body .section2 span{
@@ -440,4 +457,67 @@ footer span{
 	color: white;
 }
 
+/*.body_candidates {
+	overflow: hidden;
+}*/
+body .wrapper_candidates {
+	padding-top: 15px;
+}
 
+
+body .wrapper_candidates .categories{
+	background-color: #e7eef4;
+	padding: 20px 10px;
+	text-align: center;
+}
+
+body .wrapper_candidates .card{
+	width: 18%;
+	margin: 0px 5px;
+
+}
+
+body .wrapper_candidates h3{
+	font-weight: 600;
+	margin-bottom: 0px;
+	padding: 5px;
+	font-size: 16px;
+}
+
+body .wrapper_candidates p{
+	padding: 0px 5px;
+	font-size: 16px;
+}
+
+body .wrapper_candidates .no_padding{
+	padding: 0px;
+}
+
+body .wrapper_candidates .wrapper_card{
+	padding: 0px 5px;
+	font-size: 16px;
+}
+
+body .wrapper_candidates .wrapper_card img{
+	object-fit: cover;
+	height: 140px;
+}
+
+body .wrapper_candidates .wrapper_card .row{
+	margin: auto;
+}
+
+body .wrapper_candidates .wrapper_detailcard{
+	margin: 0px 5px;
+}
+
+body .wrapper_candidates .wrapper_detailcard .wrapper_image{
+
+}
+
+body .wrapper_candidates .wrapper_detailcard img{
+	width: 40%;
+	height: 200px;
+	object-fit: cover;
+	margin-right: 10px;
+}

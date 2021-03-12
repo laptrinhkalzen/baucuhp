@@ -42,3 +42,6 @@ Route::post('/register-member', ['as' => 'api.register-member', 'uses' => 'Api\F
 Route::post('/upload', ['as' => 'api.upload', 'uses' => 'Api\FrontendController@upload']);
 Route::post('/uploadImage', ['as' => 'api.uploadimage', 'uses' => 'Api\FrontendController@uploadImage']);
 Route::post('/delete_image', ['as' => 'api.upload', 'uses' => 'Api\FrontendController@delete_image']);
+
+//Custom
+Route::get('/detail-candidates', ['as' => 'api.detail_candidates', 'uses' => 'Api\FrontendController@detail_candidates']);

@@ -473,4 +473,25 @@ class FrontendController extends Controller {
          File::delete('..'.$request->get('link'));
     }
 
+    public function detail_candidates(Request $request){
+        $id_candidates = $request->id;
+        $detail = \DB::table('candidates')->where('id',$id_candidates)->get();
+        foreach($detail as $key =>$detail){
+            $output =   '
+                        <div class="wrapper_img" style="width: 50%;float:left;">
+                            <img src="'.$detail->images.'">
+                        </div>
+                        <div style="width: 50%;float:right;">
+                            <h3 style="font-size:20px;">'.$detail->title.'</h3>
+                            <p>Đơn vị công tác:&nbsp'.$detail->employment_cd.'</p>
+                            <p>Chức vụ:&nbsp'.$detail->position_cd.'</p>
+                            <p>Ngày sinh:&nbsp'.$detail->birthday.'</p>
+                        </div>
+                        ';
+
+        }
+
+        echo $output;
+
+    }
 }

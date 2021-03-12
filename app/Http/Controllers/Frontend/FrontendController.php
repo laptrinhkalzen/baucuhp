@@ -38,7 +38,8 @@ class FrontendController extends Controller {
     }
 
     public function baucu() {
-        return view('frontend/candidates/index');
+        $record = $this ->candidatesRepo->getAll();
+        return view('frontend/candidates/index', compact('record'));
     }
 
 

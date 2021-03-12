@@ -107,8 +107,8 @@
 							<div class="owl-carousel owl-theme">
 								@foreach($candidates as $key => $candidates)
 							    <div class="item candidates">
-							    	<img src="{!!$candidates->getImage()!!}">
-							    	<h3>{!!$candidates->title!!}</h3>
+							    	<a href="{!!route('candidates.detail')!!}"><img src="{!!$candidates->getImage()!!}">
+							    	<h3>{!!$candidates->title!!}</h3></a>
 							    	<p class="section2-birthday">Sinh ngày {!!$candidates->getBirthday()!!}</p>
 							    </div>
 							    @endforeach

@@ -11,7 +11,7 @@
 		<div class="container">
 			<ul>
 				<li>
-					<img src="{!!asset('icon/home.svg')!!}">
+					<a href="{!!route('home.index')!!}"><img src="{!!asset('icon/home.svg')!!}"></a>
 				</li>
 				<li>
 					Tin tức bầu cử

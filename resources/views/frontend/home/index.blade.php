@@ -11,8 +11,8 @@
 							@foreach($news_arr as $key => $news)
 							@if($key==0)
 							<div class="column1-firstnews">
-								<!-- <a href="{!!route('news.detail',['alias'=>$news->alias])!!}"> --><img src="{!!$news->getImage()!!}">
-								<h2>{!!$news->title!!}</h2><!-- </a> -->
+								<a href="{!!route('news.detail',['alias'=>$news->alias])!!}"><img src="{!!$news->getImage()!!}">
+								<h2>{!!$news->title!!}</h2></a>
 								<span>{!!$news->getPostSchedule()!!}</span>
 								<br>
 								<a>{!!$news->description!!}</a>
@@ -25,8 +25,8 @@
 										@foreach($news_arr as $key => $news)
 										@if($key>0 && $key<3)
 										<div class="col-6">
-											<img src="{!!$news->getImage()!!}">
-											<h2>{!!$news->title!!}</h2>
+											<a href="{!!route('news.detail',['alias'=>$news->alias])!!}"><img src="{!!$news->getImage()!!}">
+											<h2>{!!$news->title!!}</h2></a>
 										</div>
 										@endif
 										@endforeach
@@ -38,8 +38,8 @@
 							@foreach($news_arr as $key => $news)
 							@if($key==3)
 							<div class="column2-firstnews">
-								<img src="{!!$news->getImage()!!}">
-								<h2>{!!$news->title!!}</h2>
+								<a href="{!!route('news.detail',['alias'=>$news->alias])!!}"><img src="{!!$news->getImage()!!}">
+								<h2>{!!$news->title!!}</h2></a>
 								<hr>
 							</div>
 							@endif
@@ -50,10 +50,10 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-5 wrapper-img">
-											<img src="{!!$news->getImage()!!}">
+											<a href="{!!route('news.detail',['alias'=>$news->alias])!!}"><img src="{!!$news->getImage()!!}"></a>
 										</div>
 										<div class="col-7 wrapper-title" >
-											<h2>{!!$news->title!!}</h2>
+											<a href="{!!route('news.detail',['alias'=>$news->alias])!!}"><h2>{!!$news->title!!}</h2></a>
 										</div>
 									</div>
 								</div>
@@ -71,19 +71,19 @@
 							</div>
 							@foreach($news_isnew_arr as $key => $news)
 							<div class="news tin-moi" >
-								<img src="icon/clock.svg"><span>10 phút trước</span>
+								<a href="{!!route('news.detail',['alias'=>$news->alias])!!}"><img src="icon/clock.svg"><span>10 phút trước</span>
 								<h2>
 									{!!$news->title!!}
-								</h2>
+								</h2></a>
 								<hr>
 							</div>
 							@endforeach
 							@foreach($news_ishot_arr as $key => $news)
 							<div class="news tin-doc-nhieu" >
-								<img src="icon/clock.svg"><span>10 phút trước</span>
+								<a href="{!!route('news.detail',['alias'=>$news->alias])!!}"><img src="icon/clock.svg"><span>10 phút trước</span>
 								<h2>
 									{!!$news->title!!}
-								</h2>
+								</h2></a>
 								<hr>
 							</div>
 							@endforeach

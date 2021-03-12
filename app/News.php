@@ -9,7 +9,7 @@ class News extends Model {
     //
     protected $table = "news";
     protected $fillable = [
-        'title', 'alias', 'description', 'content', 'meta_title', 'meta_keywords', 'meta_description', 'is_hot', 'status', 'ordering', 'keywords', 'images', 'created_by', 'post_schedule'
+        'title', 'alias', 'description', 'content', 'meta_title', 'meta_keywords', 'meta_description', 'is_hot', 'is_new', 'status', 'ordering', 'keywords', 'images', 'created_by', 'post_schedule'
     ];
 
     public function categories() {
@@ -21,7 +21,8 @@ class News extends Model {
     }
 
     public function getPostSchedule() {
-        return date('d/m/Y', strtotime($this->post_schedule != '0000-00-00 00:00:00' ?: $this->created_at));
+        $value = $this->post_schedule; 
+        return $value;
     }
 
     public function url() {
@@ -39,6 +40,12 @@ class News extends Model {
 
     public function createdBy() {
         return $this->belongsTo('App\User', 'created_by');
+    }
+
+    public function getDayOfWeek($dayofweek) {
+        if($dayofweek==5)
+            $value = 'Sáu';
+        return $value;
     }
 
 }

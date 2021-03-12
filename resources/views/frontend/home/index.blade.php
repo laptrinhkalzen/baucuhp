@@ -20,7 +20,7 @@
 		<header>
 			<div class="topbar">
 				<div class="container">
-					<span>Thứ hai, ngày 11 tháng 3 năm 2021</span><span>Hòm thư góp ý</span>
+					<span>{!!$datetime['dayofweek']!!}, ngày {!!$datetime['day']!!} tháng {!!$datetime['month']!!} năm {!!$datetime['year']!!}</span><span>Hòm thư góp ý</span>
 				</div>
 			</div>
 			<div class="banner" style="background-image: url('img/cau-hvt.png');">
@@ -144,39 +144,13 @@
 					<div class="row">
 						<div class="container wrapper-carousel">
 							<div class="owl-carousel owl-theme">
+								@foreach($candidates as $key => $candidates)
 							    <div class="item candidates">
 							    	<img src="img/nxp.jpg">
-							    	<h3> Nguyễn Văn A</h3>
-							    	<p class="section2-birthday">Sinh ngày mm/dd/yyy</p>
+							    	<h3>{!!$candidates->title!!}</h3>
+							    	<p class="section2-birthday">Sinh ngày {!!$candidates->getBirthday()!!}</p>
 							    </div>
-							    <div class="item candidates">
-							    	<img src="img/nxp.jpg">
-							    	<h3> Nguyễn Văn A</h3>
-							    </div>
-							    <div class="item candidates">
-							    	<img src="img/nxp.jpg">
-							    	<h3> Nguyễn Văn A</h3>
-							    </div>
-							    <div class="item candidates">
-							    	<img src="img/nxp.jpg">
-							    	<h3> Nguyễn Văn A</h3>
-							    </div>
-							    <div class="item candidates">
-							    	<img src="img/nxp.jpg">
-							    	<h3> Nguyễn Văn A</h3>
-							    </div>
-							    <div class="item candidates">
-							    	<img src="img/nxp.jpg">
-							    	<h3> Nguyễn Văn A</h3>
-							    </div>
-							    <div class="item candidates">
-							    	<img src="img/nxp.jpg">
-							    	<h3> Nguyễn Văn A</h3>
-							    </div>
-							    <div class="item candidates">
-							    	<img src="img/nxp.jpg">
-							    	<h3> Nguyễn Văn A</h3>
-							    </div>
+							    @endforeach
 							</div>
 						</div>
 					</div>

@@ -43,4 +43,8 @@ class CandidatesRepository extends AbstractRepository {
         return $this->model->where('id', $id)->pluck('birthday');
     }
 
+    public function getAll() {
+        return $this->model->where('status','1')->get();
+    }
+
 }

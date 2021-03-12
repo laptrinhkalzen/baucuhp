@@ -30,5 +30,9 @@ class Candidates extends Model {
         return date('d/m/Y', strtotime($this->created_at));
     }
 
+    public function getBirthday() {
+        return date('d/m/Y', strtotime($this->birthday));
+    }
+
 
 }

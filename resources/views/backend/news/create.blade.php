@@ -146,12 +146,20 @@
                             </div>
                         </div>
                         <div class="form-group row">
+                            <div class="form-check col-md-5 form-check-right">
+                                <label class="form-check-label float-right">
+                                    Tin mới
+                                    <input type="checkbox" class="form-check-input-styled" name="is_new" data-fouc="">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
                             <label class="form-check-label col-md-6  text-left">Hẹn ngày đăng </label>
                             <div class="input-group col-md-12" style="margin-top:20px">
                                 <span class="input-group-prepend">
                                     <span class="input-group-text"><i class="icon-calendar5"></i></span>
                                 </span>
-                                <input type="text" class="form-control pickadate" placeholder="Ngày đăng" name="post_schedule">
+                                <input type="text" class="form-control pickadate" placeholder="Ngày đăng"  value="<?php echo date('Y-m-d'); ?>" name="post_schedule">
                             </div>
                         </div>
                         <div class="form-group row">

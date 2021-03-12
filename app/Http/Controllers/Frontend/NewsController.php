@@ -48,7 +48,8 @@ class NewsController extends Controller {
 
     public function detailnews($alias) {
         $record = $this->newsRepo->findByAlias($alias);
-        return view('frontend/news/detail', compact('record'));
+        $hot_news = $this->newsRepo->getIsHot($limit = 4);
+        return view('frontend/news/detail', compact('record','hot_news'));
     }
 
 }

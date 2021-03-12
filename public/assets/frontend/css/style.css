@@ -1,5 +1,6 @@
 * {
 	font-family: 'Merriweather', serif !important;
+	font-size: 14px;
 }
 
 * a:hover{
@@ -24,13 +25,7 @@ header .topbar span:nth-child(2){
 
 header .banner{
 	height: 114px;
-	background-image: 
-		linear-gradient(
-          rgba(0, 0, 0, 0.7), 
-          rgba(0, 0, 0, 0.7)
-        );
 	background-size: cover;
-	background-color:rgba(0, 0, 0, 0.5);
 	font-size: 46px;
 	color: white;
   	display: flex;
@@ -41,6 +36,7 @@ header .banner{
 
 header .banner h1{
 	margin-bottom: 0px;
+  	text-shadow: 2px 2px black;
 }
 
 header .nav{
@@ -68,7 +64,7 @@ header .nav li{
     display:inline;
     padding: 0 10px; 
     text-transform: uppercase;
-	font-size: 16px !important;
+	font-size: 16px;
 }
 
 header .nav li:nth-child(1){
@@ -94,6 +90,7 @@ body .section1 .section1-column1 .column1-firstnews{
 body .section1 .section1-column1 .column1-firstnews h2{
 	padding-top: 5px;
 	font-size: 26px;
+	font-weight: 700;
    overflow: hidden;
    text-overflow: ellipsis;
    display: -webkit-box;
@@ -137,7 +134,9 @@ body .section1 .section1-column1 .column1-secondnews img{
 }
 
 body .section1 .section1-column1 .column1-secondnews h2{
-	font-size: 20px;
+	padding-top: 5px;
+	font-size: 16px;
+	font-weight: 700;
    	overflow: hidden;
    text-overflow: ellipsis;
    display: -webkit-box;
@@ -153,7 +152,8 @@ body .section1 .section1-column2 .column2-firstnews img{
 
 body .section1 .section1-column2 .column2-firstnews h2{
 	padding-top: 5px;
-	font-size: 20px;
+	font-size: 16px;
+	font-weight: 700;
 	text-align: center;
    	overflow: hidden;
    text-overflow: ellipsis;
@@ -168,6 +168,7 @@ body .section1 .section1-column2 .column2-secondnews img{
 
 body .section1 .section1-column2 .column2-secondnews h2{
 	font-size: 16px;
+	font-weight: 700;
 	text-align: center;
    	overflow: hidden;
    text-overflow: ellipsis;
@@ -241,7 +242,8 @@ body .section1 .section1-column3 .news span{
 
 body .section1 .section1-column3 .news h2{
 	margin-bottom: 0px;
-	font-size: 20px;
+	font-size: 16px;
+	font-weight: 700;
    	overflow: hidden;
    text-overflow: ellipsis;
    display: -webkit-box;
@@ -269,7 +271,7 @@ body .section2 span{
 	background-color: red;
 	color: white;
 	text-align: center;
-	font-size: 29px;
+	font-size: 26px;
 	text-transform: uppercase;
 }
 
@@ -304,6 +306,9 @@ body .section2 .wrapper-carousel{
 }
 
 body .section2 .wrapper-carousel h3{
+	font-size: 20px;
+	font-weight: 700;
+	padding-top: 5px;
 	text-align: center;
 }
 
@@ -318,7 +323,7 @@ body .section3 span{
 	background-color: red;
 	color: white;
 	text-align: center;
-	font-size: 29px;
+	font-size: 26px;
 	text-transform: uppercase;
 }
 
@@ -347,7 +352,8 @@ body .section3 .section3-colum1 .wrapper-video .video-column1 iframe{
 
 body .section3 .section3-colum1 .wrapper-video .video-column1 h3{
 	padding-top: 10px;
-	font-size: 20px;
+	font-size: 16px;
+  	font-weight: 700;
 }
 
 body .section3 .section3-colum1 .wrapper-video .video-column2 iframe{
@@ -358,12 +364,13 @@ body .section3 .section3-colum1 .wrapper-video .video-column2 h3{
 	width: 60%;
 	height: 100%;
 	padding-left: 20px;
-	font-size: 20px;
+	font-size: 16px;
    	overflow: hidden;
    	text-overflow: ellipsis;
    	display: -webkit-box;
    -webkit-line-clamp: 4; /* number of lines to show */
    -webkit-box-orient: vertical;
+  	font-weight: 700;
 }
 
 
@@ -393,7 +400,8 @@ body .section3 .section3-colum2 .wrapper-documents  .documents h3{
    	display: -webkit-box;
    -webkit-line-clamp: 3; /* number of lines to show */
    -webkit-box-orient: vertical;
-   font-size: 20px;
+   font-size: 16px;
+   font-weight: 700;
 }
 
 body .section3 .section3-colum2 .wrapper-documents  .documents hr{
@@ -412,7 +420,7 @@ body .section4 span{
 	padding:5px 0px;
 	padding-bottom: 3px;
 	text-align: center;
-	font-size: 29px;
+	font-size: 26px;
 	text-transform: uppercase;
 	border-bottom: red solid;
 }

@@ -76,6 +76,9 @@ class NewsRepository extends AbstractRepository {
     public function getIsHot($limit) {
         return $this->model->where('status',1)->where('is_hot',1)->take($limit)->get();
     }
+    public function getDetail($id) {
+        return $this->model->where('status',1)->where('id',$id)->get();
+    }
 
 
 

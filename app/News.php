@@ -42,10 +42,5 @@ class News extends Model {
         return $this->belongsTo('App\User', 'created_by');
     }
 
-    public function getDayOfWeek($dayofweek) {
-        if($dayofweek==5)
-            $value = 'Sáu';
-        return $value;
-    }
 
 }

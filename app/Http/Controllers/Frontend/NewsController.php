@@ -43,11 +43,12 @@ class NewsController extends Controller {
         $config = $this->newsRepo->getConfig($record->id);
         $blog = $record;
         //$url = \Illuminate\Support\Facades\Request::url();
-        if (config('global.device') != 'pc') {
-            return view('mobile/news/detail', compact('record', 'blog', 'config', 'category_arr', 'featured_news'));
-        } else {
-            return view('frontend/news/detail', compact('record', 'blog', 'config', 'featured_news', 'category_arr', 'related_news'));
-        }
+        return view('frontend/news/detail', compact('record', 'blog', 'config', 'featured_news', 'category_arr', 'related_news'));
+    }
+
+    public function detailnews($alias) {
+        $record = $this->newsRepo->findByAlias($alias);
+        return view('frontend/news/detail', compact('record'));
     }
 
 }

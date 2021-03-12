@@ -54,19 +54,17 @@
 </script>
 
 <!-- BASE CSS -->
-<link href="{!!asset('assets/frontend/css/bootstrap.min.css')!!}" rel="stylesheet">
-<link href="{!!asset('assets/frontend/css/font-awesome.css')!!}" rel="stylesheet">
-<link href="{!!asset('assets/frontend/css/owl.carousel.min.css')!!}" rel="stylesheet">
-<link href="{!!asset('assets/frontend/css/owl.theme.default.min.css')!!}" rel="stylesheet">
-<link href="{!!asset('assets/frontend/css/sweetalert.min.css')!!}" rel="stylesheet">
-<link href="{!!asset('assets/frontend/css/bootstrap.min.css')!!}" rel="stylesheet">
-<link rel="stylesheet" href="{!!asset('assets/frontend/css/nice-select.css')!!}">
-
-<link href="{!!asset('assets/frontend/css/style.css')!!}" rel="stylesheet">
-<link href="{!!asset('assets/frontend/css/blog.css')!!}" rel="stylesheet">
-<link href="{!!asset('assets/frontend/css/custom.css')!!}" rel="stylesheet">
-<link href="{!!asset('assets/frontend/css/vendors.css')!!}" rel="stylesheet">
-<link href="{!!asset('assets/frontend/css/jquery.auto-complete.min.css')!!}" rel="stylesheet">
+<link rel="stylesheet" href="{!!asset('assets/frontend/css/reset.css')!!}">
+<link rel="stylesheet" href="{!!asset('assets/frontend/css/style.css')!!}">
+<link rel="stylesheet" href="{!!asset('assets/frontend/css/bootstrap.min.css')!!}">
+<link rel="stylesheet" href="{!!asset('assets/frontend/css/owl.carousel.min.css')!!}">
+<link rel="stylesheet" href="{!!asset('assets/frontend/css/owl.theme.default.css')!!}">
+<script src="{!!asset('assets/frontend/js/jquery.min.js')!!}"></script>
+<script src="{!!asset('assets/frontend/js/script.js')!!}"></script>
+<script src="{!!asset('assets/frontend/js/owl.carousel.min.js')!!}"></script>
+<script src="{!!asset('assets/frontend/js/bootstrap.min.js')!!}"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
 
 <script type="text/javascript">

@@ -43,4 +43,5 @@ Route::group(['middleware' => 'frontend'], function() {
     Route::get('/khach-hang/tai-khoan/{alias}', ['as' => 'member.edit_profile', 'uses' => 'Frontend\MemberController@editProfile']);
 
     Route::get('/baucu', ['as' => 'baucu.index', 'uses' => 'Frontend\FrontendController@baucu']);
+    Route::get('/detail-news/{alias}', ['as' => 'news.detail', 'uses' => 'Frontend\NewsController@detailnews']);
 });

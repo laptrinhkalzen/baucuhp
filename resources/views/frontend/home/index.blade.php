@@ -146,7 +146,7 @@
 							<div class="owl-carousel owl-theme">
 								@foreach($candidates as $key => $candidates)
 							    <div class="item candidates">
-							    	<img src="img/nxp.jpg">
+							    	<img src="{!!$candidates->getImage()!!}">
 							    	<h3>{!!$candidates->title!!}</h3>
 							    	<p class="section2-birthday">Sinh ngày {!!$candidates->getBirthday()!!}</p>
 							    </div>
@@ -252,7 +252,7 @@
 								</div>
 							</div>
 							<div class="wrapper-gallery">
-								<img src="img/nxp.jpg">
+								<img src="img/gocanh.jpg">
 							</div>
 						</div>
 					</div>

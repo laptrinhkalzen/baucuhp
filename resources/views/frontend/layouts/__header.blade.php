@@ -16,7 +16,7 @@
 				<li>
 					Tin tức bầu cử
 				</li>
-				<li>
+<!-- 				<li>
 					Thông tin ứng cử viên
 				</li>
 				<li>
@@ -27,7 +27,7 @@
 				</li>
 				<li>
 					Tài liệu hướng dẫn
-				</li>
+				</li> -->
 			</ul>
 		</div>
 	</div>

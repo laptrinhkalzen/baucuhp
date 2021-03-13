@@ -611,6 +611,10 @@ body .column2 hr{
 
 .detail_candidates .wrapper_img{
 	padding: 15px;
+	width: 40%;
+}
+.detail_candidates .wrapper_img .img{
+	width: 100%;
 }
 
 .detail_candidates .detail{

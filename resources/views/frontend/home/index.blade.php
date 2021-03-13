@@ -285,7 +285,12 @@ $(document).ready(function(){
 	  	$(".tin-moi").hide();
 
   	});
+
+  	$('.carousel').carousel({
+  		interval: 200 * 10
+	});
 });
 </script>
+
 
 @stop

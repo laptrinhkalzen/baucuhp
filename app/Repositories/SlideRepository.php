@@ -33,6 +33,6 @@ class SlideRepository extends AbstractRepository
     }
 
     public function getAll() {
-        return $this->model->where('status',1)->get();
+        return $this->model->where('status',1)->where('position',1)->get();
     }
 }

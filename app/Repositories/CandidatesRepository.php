@@ -47,4 +47,8 @@ class CandidatesRepository extends AbstractRepository {
         return $this->model->where('status','1')->get();
     }
 
+    public function getCandidatesById($id) {
+        return $this->model->where('id',$id)->get();
+    }
+
 }

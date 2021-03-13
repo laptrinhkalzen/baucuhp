@@ -10,17 +10,19 @@ use Repositories\KeywordRepository;
 use Repositories\NewsRepository;
 use Repositories\VideoRepository;
 use App\Repositories\CandidatesRepository;
+use App\Repositories\SlideRepository;
 use Carbon\Carbon;
 
 class FrontendController extends Controller {
 
-    public function __construct(CategoryRepository $categoryRepo, ConstructionRepository $constructionRepo, KeywordRepository $keywordRepo, NewsRepository $newsRepo, VideoRepository $videoRepo, CandidatesRepository $candidatesRepo) {
+    public function __construct(CategoryRepository $categoryRepo, ConstructionRepository $constructionRepo, KeywordRepository $keywordRepo, NewsRepository $newsRepo, VideoRepository $videoRepo, CandidatesRepository $candidatesRepo,  SlideRepository $slideRepo) {
         $this->categoryRepo = $categoryRepo;
         $this->constructionRepo = $constructionRepo;
         $this->keywordRepo = $keywordRepo;
         $this->newsRepo = $newsRepo;
         $this->videoRepo = $videoRepo;
         $this->candidatesRepo = $candidatesRepo;
+        $this->slideRepo = $slideRepo;
     }
 
     public function index() {
@@ -34,7 +36,8 @@ class FrontendController extends Controller {
         $video_arr = $this->videoRepo->getAll($limit = 4);
         $doc_arr = $this->newsRepo->getAllByCategory($category_id =3, $limit=4);
         $candidates = $this ->candidatesRepo->getAll();
-        return view('frontend/home/index', compact('category_arr', 'construction_arr', 'keyword_arr', 'news_arr', 'news_isnew_arr', 'news_ishot_arr' , 'video_arr', 'doc_arr','candidates'));
+        $slide = $this ->slideRepo->getAll();
+        return view('frontend/home/index', compact('category_arr', 'construction_arr', 'keyword_arr', 'news_arr', 'news_isnew_arr', 'news_ishot_arr' , 'video_arr', 'doc_arr','candidates','slide'));
     }
 
     public function baucu() {

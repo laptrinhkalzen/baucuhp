@@ -43,9 +43,14 @@ class CandidatesController extends Controller {
         return view('frontend/news/detail', compact('record', 'blog', 'config', 'featured_news', 'category_arr', 'related_news'));
     }
 
-    public function detail_candidates() {
+    public function list_candidates() {
         $record = $this->candidatesRepo->getAll();
         return view('frontend/candidates/index', compact('record'));
+    }
+
+    public function detail_candidates($id) {
+        $record = $this->candidatesRepo->getCandidatesById($id);
+        return view('frontend/candidates/detail', compact('record'));
     }
 
 }

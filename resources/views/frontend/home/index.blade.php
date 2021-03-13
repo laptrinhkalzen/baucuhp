@@ -4,6 +4,32 @@
 <html>
 	<div id="wrapper">
 		<body>
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+			  	@foreach($slide as $key => $slide)
+			  	@foreach($slide->getImage() as $key1 =>$image)
+			  	@if($key1==0)
+			    <div class="carousel-item active">
+			      <img class="d-block w-100" src="{!!$image!!}" alt="First slide">
+			    </div>
+			    @endif
+			  	@if($key1>0)
+			    <div class="carousel-item ">
+			      <img class="d-block w-100" src="{!!$image!!}" alt="First slide">
+			    </div>
+			    @endif
+			    @endforeach
+			    @endforeach
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
 			<div class="section1">
 				<div class="container">
 					<div class="row">
@@ -107,7 +133,7 @@
 							<div class="owl-carousel owl-theme">
 								@foreach($candidates as $key => $candidates)
 							    <div class="item candidates">
-							    	<a href="{!!route('candidates.detail')!!}"><img src="{!!$candidates->getImage()!!}">
+							    	<a href="{!!route('candidates.detail',['id'=>$candidates->id])!!}"><img src="{!!$candidates->getImage()!!}">
 							    	<h3>{!!$candidates->title!!}</h3></a>
 							    	<p class="section2-birthday">Sinh ngày {!!$candidates->getBirthday()!!}</p>
 							    </div>

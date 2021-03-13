@@ -44,5 +44,7 @@ Route::group(['middleware' => 'frontend'], function() {
 
     Route::get('/baucu', ['as' => 'baucu.index', 'uses' => 'Frontend\FrontendController@baucu']);
     Route::get('/detail-news/{alias}', ['as' => 'news.detail', 'uses' => 'Frontend\NewsController@detailnews']);
-    Route::get('/candidates/', ['as' => 'candidates.detail', 'uses' => 'Frontend\CandidatesController@detail_candidates']);
+    Route::get('/candidates-list/', ['as' => 'candidates.list', 'uses' => 'Frontend\CandidatesController@list_candidates']);
+    Route::get('/candidates/{id}', ['as' => 'candidates.detail', 'uses' => 'Frontend\CandidatesController@detail_candidates']);
+
 });

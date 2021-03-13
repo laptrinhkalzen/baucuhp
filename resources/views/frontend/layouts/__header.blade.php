@@ -17,7 +17,7 @@
 					Tin tức bầu cử
 				</li>
 				<li>
-					Thông tin ứng cử viên
+					<a href="{!!route('candidates.list')!!}">Thông tin ứng cử viên</a>
 				</li>
 				<li>
 					Thông tin cử tri

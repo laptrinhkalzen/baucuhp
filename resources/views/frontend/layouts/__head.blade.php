@@ -64,7 +64,7 @@
 <script src="{!!asset('assets/frontend/js/owl.carousel.min.js')!!}"></script>
 <script src="{!!asset('assets/frontend/js/bootstrap.min.js')!!}"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
 
 
 <script type="text/javascript">

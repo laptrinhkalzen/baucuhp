@@ -10,7 +10,16 @@
 						<div class="col-lg-1">
 							<div class="wrapper_categories">
 								<div class="categories">
-									<div >Bộ chính trị</div>
+									<div >Quốc hội</div>
+								</div>
+								<div class="categories">
+									<div >HĐND Thành phố</div>
+								</div>
+								<div class="categories">
+									<div >HĐND Huyện</div>
+								</div>
+								<div class="categories">
+									<div >HĐND Xã</div>
 								</div>
 							</div>
 						</div>
